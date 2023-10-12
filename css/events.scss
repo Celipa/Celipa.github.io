@@ -166,16 +166,16 @@ header .fa-bars{
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
     opacity: 50%;
-  }
-  .about .row .video-container:hover .play-button {
+}
+.about .row .video-container:hover .play-button {
     display: block;
-  }
-  
-  .about .row .video-container video {
+}
+
+.about .row .video-container video {
     width: 100%;
     height: auto;
     color: #000;
-  }
+}
   
   .about .row .play-button {
     position: absolute;
@@ -327,6 +327,12 @@ header .fa-bars{
 
 .products .box-container .box:hover .image .icons{
     bottom:0;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width:100%;
+    background-color: rgba(94, 94, 94, 0.589);
+    color:#fff;
 }
 
 .products .box-container .box .image .icons a{

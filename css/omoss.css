@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/*HEADER*/
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgb(66, 67, 70);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: rgb(44, 44, 44);
+  color: white;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  background: rgba(65, 65, 65, 0.377);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(66, 67, 70);
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  font-size: 3rem;
+  color: white;
+  font-weight: bolder;
+}
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: white;
+}
+header .navbar a a:hover {
+  color: gray;
+}
+header #toggler {
+  display: none;
+}
+header .fa-bars {
+  font-size: 3rem;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  display: none;
+}
+header .icons a {
+  font-size: 2.5rem;
+  color: rgb(202, 202, 202);
+  margin-left: 1.5rem;
+}
+header a:hover {
+  color: gray;
+}
+
+/*
+header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-size: 3rem;
+    color:$whitecolor;
+    font-weight: bolder;
+}
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:$whitecolor;
+}
+
+header .navbar a:hover{
+    color:$hover;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:$lightgray;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:$hover;
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:$whitecolor;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(255, 255, 255, 0.3);
+    display: none;
+}
+*/
+/*FRONT PANEL*/
+.home-container {
+  background: url(../image/someone_buying_tickets_on_their_phone.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.home .content {
+  max-width: 50rem;
+  background-color: rgba(255, 255, 255, 0.6862745098);
+  border-radius: 40px;
+  padding: 20px;
+}
+.home .content h3 {
+  font-size: 6rem;
+  color: rgb(44, 44, 44);
+}
+.home .content span {
+  font-size: 3.5rem;
+  color: gray;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.home .content p {
+  font-size: 1.5rem;
+  color: rgb(44, 44, 44);
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+/*ABOUT US*/
+.about {
+  /*why choose us?*/
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+.about .content {
+  flex: 1 1 40rem;
+  /*rubrik 1*/
+}
+.about .content h3 {
+  font-size: 3rem;
+  color: rgb(44, 44, 44);
+  padding-bottom: 0.5rem;
+}
+.about .content p {
+  font-size: 1.5rem;
+  color: rgb(44, 44, 44);
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+  line-height: 1.8;
+}
+
+/*rubrik 2*/
+.team p {
+  text-align: center;
+  font-size: 1.7rem;
+  color: rgb(44, 44, 44);
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+  line-height: 1.8;
+}
+.team img {
+  width: 100%;
+  border: 1.5rem solid white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Ceotitle {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.CEO {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex: 1 1 25rem;
+}
+.CEO .message p {
+  font-size: 1.4rem;
+}
+.CEO img {
+  width: 50%;
+  border: 1.5rem solid white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.CEO .info {
+  max-width: 40%;
+  flex-direction: column;
+  border: 1.5rem solid white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.CEO .info h3 {
+  font-size: 1.6rem;
+}
+.CEO .info p {
+  font-size: 1.7rem;
+  flex-wrap: wrap;
+}
+.CEO .info h2 {
+  margin-top: 7rem;
+  padding: 4rem;
+  border: 1.5rem solid white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  font-style: italic;
+  font-weight: 200;
+  font-family: "Times New Roman";
+  font-size: 2.4rem;
+}
+.CEO .contact-info {
+  max-width: 100%;
+}
+.CEO .contact-info .ceo-contact {
+  border: 1.5rem solid white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.CEO .contact-info .ceo-contact h3 {
+  color: #333;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.CEO .contact-info .ceo-contact a {
+  display: block;
+  color: #bbbbbb;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.CEO .contact-info .ceo-contact a:hover {
+  text-decoration: underline;
+  color: rgb(44, 44, 44);
+}
+
+.contact .row {
+  flex-wrap: wrap-reverse;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.contact .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.contact .row form .box {
+  font-size: 1.7rem;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0.7rem 0;
+}
+.contact .row form .box:focus {
+  border-color: var(--pink);
+}
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+}
+.contact .row .image {
+  flex: 1 1 60rem;
+}
+.contact .row .image img {
+  width: 100%;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.footer .box-container .box {
+  flex: 1 1 25rem;
+  /*--------*/
+  /*--------*/
+  /*--------*/
+  /*--------*/
+}
+.footer .box-container .box h3 {
+  color: rgb(44, 44, 44);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  display: block;
+  color: rgb(202, 202, 202);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.footer .box-container .box a:hover {
+  text-decoration: underline;
+  color: rgb(44, 44, 44);
+}
+.footer .box-container .box img {
+  margin-top: 1rem;
+}
+.footer .credit {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: rgb(44, 44, 44);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+/* media queries  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .home {
+    background-position: left;
+  }
+}
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #eee;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header #toggler:checked ~ .navbar {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: rgb(66, 67, 70);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+  .home .content h3 {
+    font-size: 5rem;
+  }
+  .home .content span {
+    font-size: 2.5rem;
+  }
+  .icons-container .icons h3 {
+    font-size: 2rem;
+  }
+  .icons-container .icons span {
+    font-size: 1.7rem;
+  }
+  .CEO {
+    justify-content: center;
+  }
+  .CEO img {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .CEO .info {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .CEO .contact-info {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=omoss.css.map */

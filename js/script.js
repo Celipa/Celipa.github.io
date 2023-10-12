@@ -1,3 +1,4 @@
+//Ger funktionen att man kan trycka på ''navbar'' när den är anpassad för små skärmar.
 let navbar = document.querySelector('.navbar')
 
 document.querySelector('#menu-bar').onclick = () =>{
@@ -7,7 +8,7 @@ document.querySelector('#menu-bar').onclick = () =>{
 document.querySelector('#close').onclick = () =>{
     navbar.classList.remove('active');
 }
-
+//Ger funktionen att 
 window.onscroll = () =>{
 
     navbar.classList.remove('active');
@@ -19,7 +20,7 @@ window.onscroll = () =>{
     }
 
 }
-
+//låter användaren ändra tema på hemsidan
 let themeToggler = document.querySelector('#theme-toggler');
 
 themeToggler.onclick = () =>{

@@ -1,0 +1,41 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+form input[type=text],
+form input[type=date],
+form input[type=time],
+form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+form input[type=text]:focus,
+form input[type=date]:focus,
+form input[type=time]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--pink);
+}
+form input[type=submit] {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #000000;
+  border: solid 1px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+form input[type=submit]:hover {
+  background-color: var(--pink-hover);
+}/*# sourceMappingURL=eventform.css.map */

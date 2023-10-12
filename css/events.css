@@ -330,6 +330,12 @@ header .fa-bars {
 
 .products .box-container .box:hover .image .icons {
   bottom: 0;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 100%;
+  background-color: rgba(94, 94, 94, 0.589);
+  color: #fff;
 }
 
 .products .box-container .box .image .icons a {
