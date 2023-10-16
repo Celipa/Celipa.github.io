@@ -262,6 +262,18 @@ header .fa-bars {
   border-radius: 0.5rem;
 }
 
+.products .box-container .box .category {
+  position: absolute;
+  top: 1rem;
+  left: 45rem;
+  padding: 0.7rem 1rem;
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(44, 44, 44);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
 .products .box-container .box .image {
   position: relative;
   text-align: center;
