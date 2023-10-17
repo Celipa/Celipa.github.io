@@ -74,6 +74,7 @@ header .navbar a {
   font-size: 2rem;
   padding: 0 1.5rem;
   color: white;
+  background-color: rgb(56, 65, 95);
 }
 
 header .navbar a:hover {
@@ -561,7 +562,7 @@ header .fa-bars {
   header .navbar a {
     margin: 1.5rem;
     padding: 1.5rem;
-    background: #fff;
+    background: rgb(56, 65, 95);
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     display: block;
   }

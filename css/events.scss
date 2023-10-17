@@ -79,6 +79,7 @@ header .navbar a{
     font-size: 2rem;
     padding:0 1.5rem;
     color:$whitecolor;
+    background-color: $panelcolor;
 }
 
 header .navbar a:hover{
@@ -582,7 +583,7 @@ header .fa-bars{
     header .navbar a{
         margin:1.5rem;
         padding:1.5rem;
-        background:#fff;
+        background:$panelcolor;
         border:.1rem solid rgba(0,0,0,.1);
         display: block;
     }

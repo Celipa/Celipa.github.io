@@ -30,7 +30,7 @@ section {
   color: white;
   padding: 1rem;
   margin: 2rem 0;
-  background: rgb(66, 67, 70);
+  background: rgb(56, 65, 95);
 }
 
 header {
@@ -38,7 +38,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: rgb(66, 67, 70);
+  background: rgb(56, 65, 95);
   z-index: 1000;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -504,7 +504,7 @@ header a:hover {
   header .navbar a {
     margin: 1.5rem;
     padding: 1.5rem;
-    background: rgb(66, 67, 70);
+    background: rgb(56, 65, 95);
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     display: block;
   }
