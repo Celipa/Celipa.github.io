@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/eventform.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header section  -->
+
+<header>
+
+    <section class="flex">
+        <!--checkbox for menu bar-->
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Eventfinder</a>
+
+        <nav class="navbar">
+            <a href="/index.html">home</a>
+            <a href="/about.html">about</a>
+            <a href="/events.html">events</a>
+            <a href="/reviews.html">review</a>
+            <a href="/eventform.html">Create</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+
+    </section>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+
+<!-- about section ends -->
+
+<!-- icons section starts  -->
+<section class="eventform">
+    
+    <form class="application">
+        <h1 class="heading"> Submit your event here </h1> 
+        <form>
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" placeholder="Main title for event" class="event-name">
+        
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event-description" placeholder="Describe the event." class="event-description"></textarea>
+
+            <div class="category">
+                <select name="category">
+                
+                    <option value="">Category</option>
+                    <option value="1">Music</option>
+                    <option value="2">Family</option>
+                    <option value="3">Classic</option>
+                    <option value="4">Sport</option>
+                    <option value="5">Theater</option>
+                    <option value="6">Comedy</option>
+                    <option value="7">Entertainment</option>
+                    <option value="8">Concert</option>
+                    <option value="9">Festival</option>
+                    <option value="10">Other</option>
+                </select> 
+                
+            </div>
+        
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date" class="event-time">
+        
+            <label for="event-time">Event Time:</label>
+            <input type="time" id="event-time" name="event-time" class="event-time">
+        
+            <div class="location">
+                <select name="location">
+                
+                    <option value="">location</option>
+                    <option value="1">Sweden |Stockholm</option>
+                    <option value="2">Finland | Helsingfors</option>
+                    <option value="3">Norway | Oslo</option>
+                    <option value="4">Germany | Berlin</option>
+                    <option value="5">France | Paris</option>
+                    <option value="6">Denmark | Copenhagen</option>
+                    <option value="7">Spain | Madrid</option>
+                    <option value="8">USA | New York</option>
+                    <option value="9">Australia | Canberra</option>
+                    <option value="10">Canada | Ottowa</option>
+                </select> 
+            </div>
+            <label for="event-agenda">Event agenda:</label>
+            <textarea id="event-agenda" name="event-agenda" placeholder="What activities will take place?" class="event-agenda"></textarea>
+        </form>
+        <form class="submit-images">
+            <h1 class="heading"> Pictures </h1>
+            <div class="images">
+                <img src="/image/images.png" class="image">
+                <img src="/image/images.png" class="image">
+                <img src="/image/images.png" class="image">
+                <img src="/image/images.png" class="image">
+            </div>
+            <div class="choose-an-image">
+                <label for="event-image" class="file-upload">
+                    Choose an image
+                </label>
+                <input type="file" id="event-image" class="event-image" hidden/>
+            </div>
+            <div>
+                <input type="submit" value="submit event" class="submit">
+            </div>
+        </form>
+    </form>
+
+</section>
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact  us </h1> <!--kontakt info-->
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="phone number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="submit" class="btn">
+        </form>
+        <div class="image">
+            <img src="image/1677127756883.jpg" alt="support">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+        
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Sweden</a>
+            <a href="#">USA</a>
+            <a href="#">Germany</a>
+            <a href="#">france</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">example@gmail.com</a>
+            <a href="#">Stockholm, Sweden - 13456</a>
+            <img src="image/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> Alva Ahlberg </span> | all rights reserved </div>
+
+</section>
+
+
+</body>
+</html>

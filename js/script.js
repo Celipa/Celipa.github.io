@@ -129,3 +129,10 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+
+const input = document.querySelector('input[type="file"]');
+input.addEventListener('change', () => {
+    const file = input.files[0];
+    console.log(file);
+  // Perform any necessary processing on the file
+});

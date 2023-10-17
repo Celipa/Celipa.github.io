@@ -30,7 +30,7 @@ section {
   color: white;
   padding: 1rem;
   margin: 2rem 0;
-  background: rgb(66, 67, 70);
+  background: rgb(56, 65, 95);
 }
 
 .btn {
@@ -53,7 +53,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: rgb(66, 67, 70);
+  background: rgb(56, 65, 95);
   z-index: 1000;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -143,37 +143,63 @@ header .fa-bars {
   line-height: 1.8;
 }
 
-/*ABOUT US*/
 .about .row {
   display: flex;
   align-items: center;
-  gap: 2rem;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  gap: 2rem;
   padding-bottom: 3rem;
+  padding: 2rem 0;
 }
-
 .about .row .video-container {
   flex: 1 1 40rem;
   position: relative;
 }
-
 .about .row .video-container:hover video {
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
   opacity: 50%;
 }
-
 .about .row .video-container:hover .play-button {
   display: block;
 }
-
 .about .row .video-container video {
   width: 100%;
   height: auto;
   color: #000;
+  border: 1.5rem solid white;
+  border-radius: 0.5rem;
+  height: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
+.about .row .video-container h3 {
+  top: 80%;
+  position: absolute;
+  font-size: 3rem;
+  transform: translateY(-50%);
+  width: 100%;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem 2rem;
+  mix-blend-mode: screen;
+}
+.about .row .content {
+  flex: 1 1 40rem;
+}
+.about .row .content h3 {
+  font-size: 3rem;
+  color: rgb(44, 44, 44);
+  padding-bottom: 0.5rem;
+}
+.about .row .content p {
+  font-size: 1.5rem;
+  color: rgb(44, 44, 44);
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+  line-height: 1.8;
+}
 .about .row .play-button {
   position: absolute;
   top: 50%;
@@ -188,53 +214,11 @@ header .fa-bars {
   cursor: pointer;
   display: none;
 }
-
 .about .row .play-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-.play-button:focus {
+.about .row .play-button:focus {
   outline: none;
-}
-
-.about .row .video-container video {
-  width: 100%;
-  border: 1.5rem solid white;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.about .row .video-container h3 {
-  position: absolute;
-  top: 80%;
-  transform: translateY(-50%);
-  font-size: 3rem;
-  background: rgb(255, 255, 255);
-  width: 100%;
-  padding: 1rem 2rem;
-  text-align: center;
-  mix-blend-mode: screen;
-}
-
-.about .row .content {
-  flex: 1 1 40rem;
-}
-
-.about .row .content h3 {
-  font-size: 3rem;
-  color: rgb(44, 44, 44);
-  padding-bottom: 0.5rem;
-}
-
-.about .row .content p {
-  font-size: 1.5rem;
-  color: rgb(44, 44, 44);
-  padding: 0.5rem 0;
-  padding-top: 1rem;
-  line-height: 1.8;
 }
 
 /*INFO BOXES*/
@@ -297,6 +281,18 @@ header .fa-bars {
   font-size: 2rem;
   color: white;
   background: rgb(44, 44, 44);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+.products .box-container .box .category {
+  position: absolute;
+  top: 1rem;
+  left: 45rem;
+  padding: 0.7rem 1rem;
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(44, 44, 44);
   z-index: 1;
   border-radius: 0.5rem;
 }
