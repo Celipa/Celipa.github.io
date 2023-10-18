@@ -43,7 +43,6 @@ section {
   cursor: pointer;
   font-size: 1.8rem;
 }
-
 .btn:hover {
   background: rgba(65, 65, 65, 0.377);
 }
@@ -57,43 +56,35 @@ header {
   z-index: 1000;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
-
 header .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 header .logo {
   font-size: 3rem;
   color: white;
   font-weight: bolder;
 }
-
 header .navbar a {
   font-size: 2rem;
   padding: 0 1.5rem;
   color: white;
 }
-
 header .navbar a:hover {
   color: gray;
 }
-
 header .icons a {
   font-size: 2.5rem;
   color: rgb(202, 202, 202);
   margin-left: 1.5rem;
 }
-
 header .icons a:hover {
   color: gray;
 }
-
 header #toggler {
   display: none;
 }
-
 header .fa-bars {
   font-size: 3rem;
   color: white;
@@ -110,33 +101,28 @@ header .fa-bars {
   background-size: cover;
   background-position: center;
 }
-
-.home {
+.home-container .home {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100rem;
 }
-
-.home .content {
+.home-container .home .content {
   max-width: 50rem;
   background-color: rgba(255, 255, 255, 0.6862745098);
   border-radius: 40px;
   padding: 20px;
 }
-
-.home .content h1 {
+.home-container .home .content h1 {
   font-size: 6rem;
   color: rgb(44, 44, 44);
 }
-
-.home .content span {
+.home-container .home .content span {
   font-size: 3.5rem;
   color: gray;
   padding: 1rem 0;
   line-height: 1.5;
 }
-
-.home .content p {
+.home-container .home .content p {
   font-size: 1.5rem;
   color: rgb(44, 44, 44);
   padding: 1rem 0;
@@ -152,12 +138,10 @@ header .fa-bars {
   padding: 2rem 0;
   padding-bottom: 3rem;
 }
-
 .about .row .video-container {
   flex: 1 1 40rem;
   position: relative;
 }
-
 .about .row .video-container video {
   width: 100%;
   border: 1.5rem solid white;
@@ -167,7 +151,6 @@ header .fa-bars {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .about .row .video-container h3 {
   position: absolute;
   top: 50%;
@@ -179,17 +162,14 @@ header .fa-bars {
   text-align: center;
   mix-blend-mode: screen;
 }
-
 .about .row .content {
   flex: 1 1 40rem;
 }
-
 .about .row .content h3 {
   font-size: 3rem;
   color: rgb(44, 44, 44);
   padding-bottom: 0.5rem;
 }
-
 .about .row .content p {
   font-size: 1.5rem;
   color: rgb(44, 44, 44);

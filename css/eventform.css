@@ -89,6 +89,53 @@ header a:hover {
 }
 
 /*------------*/
+.tou-container {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.295);
+  background-color: rgba(255, 255, 255, 0.6862745098);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+.tou-container .content {
+  border-radius: 2rem;
+  max-width: 50rem;
+  min-width: 20rem;
+  background-color: rgba(255, 255, 255, 0.6862745098);
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+}
+.tou-container .content h1 {
+  font-size: 6rem;
+  color: rgb(44, 44, 44);
+}
+.tou-container .content span {
+  font-size: 3.5rem;
+  color: gray;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.tou-container .content li {
+  font-size: 1.5rem;
+  color: rgb(44, 44, 44);
+  padding: 0.1rem 0;
+  line-height: 1;
+}
+.tou-container .content .terms-btn {
+  background-color: rgb(202, 202, 202);
+  color: #eee;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-right: 70%;
+}
+.tou-container .content .terms-btn a {
+  color: black;
+}
+.tou-container .content .terms-btn a:active {
+  color: white;
+}
+.tou-container .content .terms-btn:active {
+  background-color: rgb(44, 44, 44);
+}
+
 .application {
   justify-content: center;
   font-size: 1.6rem;
@@ -104,6 +151,7 @@ header a:hover {
   display: block;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
+  max-width: 45rem;
 }
 .application input[type=text],
 .application textarea {
@@ -140,75 +188,31 @@ header a:hover {
   color: rgba(0, 0, 0, 0.301);
 }
 
-/*
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-}
-
-input[type="text"],
-textarea {
-    padding: 1rem;
-    width: 30%;
-    border: none;
-    border-radius: 0.3rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-}
-select[name="category"]{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-}
-
-input[type="date"],
-input[type="time"] {
-    padding: 1rem;
-    border: none;
-    border-radius: 0.3rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-}
-select[name="location"]{
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-    margin-top: 3rem;
-}
-/*
-img{
-    width: 28.5rem;
-    justify-content: center;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    margin-bottom: -10rem;
-}
-input[type="file"] {
-    margin-bottom: 1rem;
-}
 /*submit button*/
 .submit-images {
   background-color: #e7e7e7;
   border-radius: 1rem;
   padding-bottom: 2rem;
 }
-.submit-images .images {
-  padding: 2rem;
-  width: 100%;
-  height: 30rem;
-  display: flex;
+.submit-images .image-container {
   justify-content: center;
 }
-.submit-images .images .image {
+.submit-images .image-container .images {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+.submit-images .image-container .images .image {
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 1rem;
-  width: 100%;
-  height: 100%;
   border: 1rem solid white;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  flex: 1;
+  margin: 1rem;
 }
-.submit-images .event-image {
-  align-self: center;
+.submit-images .choose-an-image {
+  text-align: center;
 }
 .submit-images .file-upload {
   display: inline-block;
@@ -229,7 +233,7 @@ input[type="file"] {
 }
 
 /*submit button*/
-.submit {
+.submit-btn {
   display: inline-block;
   border-radius: 5rem;
   margin-left: 3rem;
@@ -240,8 +244,7 @@ input[type="file"] {
   cursor: pointer;
   font-size: 1.8rem;
 }
-
-.submit:hover {
+.submit-btn:hover {
   background: rgba(65, 65, 65, 0.377);
 }
 
@@ -332,14 +335,101 @@ input[type="file"] {
 }
 
 /* media queries  */
-@media (max-width: 1199px) {
-  img {
-    margin-bottom: 1rem;
+@media screen {
+  .image-container {
+    display: flex;
+  }
+  .tou-container {
+    float: right;
+    margin-right: 3rem;
+    align-self: center;
+  }
+  .tou-container .content {
+    max-width: 70rem;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    max-width: 100%;
+  }
+  .image-container {
+    display: flex;
+  }
+  .tou-container {
+    float: right;
+    align-self: center;
+  }
+}
+@media (max-width: 1210px) {
+  html {
+    max-width: 100%;
+  }
+  .image-container {
+    flex-wrap: wrap;
+  }
+  #event-name {
+    width: 45rem;
+  }
+  #event-description {
+    width: 45rem;
+  }
+  #event-agenda {
+    width: 45rem;
+  }
+  .tou-container {
+    float: right;
+    align-self: center;
+    margin-top: -0.5rem;
+  }
+  .tou-container .content {
+    margin-top: -0.5rem;
+    max-width: 60rem;
+    max-height: 57rem;
+  }
+  .tou-container .content .terms-btn {
+    padding: 0.3rem;
   }
 }
 @media (max-width: 1024px) {
-  img {
-    margin-bottom: 1rem;
+  html {
+    max-width: 100%;
+  }
+  #event-name {
+    width: 80%;
+  }
+  #event-description {
+    width: 80%;
+  }
+  #event-agenda {
+    width: 80%;
+  }
+  .tou-container {
+    float: left;
+    align-self: center;
+    margin-top: -0.5rem;
+  }
+  .tou-container .content {
+    margin-top: -0.5rem;
+    max-width: 60rem;
+    max-height: 57rem;
+  }
+  .tou-container .content .terms-btn {
+    padding: 0.3rem;
+  }
+}
+@media (max-width: 1160px) {
+  .tou-container {
+    float: left;
+    align-self: center;
+    margin-top: -0.5rem;
+  }
+  .tou-container .content {
+    margin-top: -0.5rem;
+    max-width: 100%;
+    max-height: 60%;
+  }
+  .tou-container .content .terms-btn {
+    padding: 0.3rem;
   }
 }
 @media (max-width: 991px) {
@@ -349,8 +439,27 @@ input[type="file"] {
   .home {
     background-position: left;
   }
-  img {
-    flex: auto;
+  #event-name {
+    width: 80%;
+  }
+  #event-description {
+    width: 80%;
+  }
+  #event-agenda {
+    width: 80%;
+  }
+  .tou-container {
+    float: left;
+    align-self: center;
+    margin-top: -0.5rem;
+  }
+  .tou-container .content {
+    margin-top: -0.5rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .tou-container .content .terms-btn {
+    padding: 0.3rem;
   }
 }
 @media (max-width: 768px) {
@@ -396,8 +505,8 @@ input[type="file"] {
   .about .headerinfo h1 {
     font-size: 2rem;
   }
-  .images {
-    margin-left: 14rem;
+  .submit {
+    text-align: center;
   }
 }
 @media (max-width: 450px) {
@@ -407,22 +516,20 @@ input[type="file"] {
   .heading {
     font-size: 3rem;
   }
-  .images {
-    margin-left: 10rem;
+  #event-name {
+    width: 80%;
   }
-}
-@media (max-width: 425px) {
-  .images {
-    margin-left: 4rem;
+  #event-description {
+    width: 80%;
   }
-}
-@media (max-width: 375px) {
-  .images {
-    margin-left: 3rem;
+  #event-agenda {
+    width: 80%;
   }
-}
-@media (max-width: 320px) {
-  .images {
-    margin-left: 1rem;
+  .tou-container {
+    float: left;
+    align-self: center;
+  }
+  .tou-container .content {
+    max-width: 80rem;
   }
 }/*# sourceMappingURL=eventform.css.map */

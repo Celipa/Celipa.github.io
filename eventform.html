@@ -8,7 +8,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/eventform.css">
-    <title>Document</title>
+    <title>create a event</title>
 </head>
 <body>
     <!-- header section  -->
@@ -42,79 +42,95 @@
 
 <!-- header section ends -->
 
-<!-- home section starts  -->
-
-
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-
-<!-- about section ends -->
-
-<!-- icons section starts  -->
 <section class="eventform">
-    
     <form class="application">
         <h1 class="heading"> Submit your event here </h1> 
-        <form>
-            <label for="event-name">Event Name:</label>
-            <input type="text" id="event-name" name="event-name" placeholder="Main title for event" class="event-name">
-        
-            <label for="event-description">Event Description:</label>
-            <textarea id="event-description" name="event-description" placeholder="Describe the event." class="event-description"></textarea>
+                <div class="tou-container">
+                    <div class="content">
+                        <span> terms of event publishment</span>
+                        <ul>
+                        <li>Any events created by the event organizer shall constitute a legally binding contract. If a client signs and returns an order detailing the “event sponsorship package” required by the “client”.</li>
+                        <li>“The event organizer” and the “client”/”agent” acknowledge that these conditions have been given due consideration and that they are considered reasonable and fair to both parties.</li>
+                        <li>“The event organizer” reserves the right to revise these terms and conditions from time to time.</li>
+                        <li>The “client” or “agent” accepts that an invoice for the full amount of the total value of the “event sponsorship package” will be raised upon receipt of a signed “order” and that the invoice will be due for payment immediately.</li>
+                        <li>If an “order” is placed within one week of the “event” the client/ agent accepts that an invoice for the full amount of the total value of the “event sponsorship package” will be raised upon receipt of a signed event which is payable immediately. Failure to do so will result in the client forfeiting their “event sponsorship package” and entry into the event by the client or “agent” or their guests will be refused. The full balance of the invoice shall remain payable immediately. Invoices must be settled in full before the date of the "event".</li>
+                        <li>The Event organizer is responsible for any and all accidents that may occur before, during and after the organized event. This includes work injuries, fires, unsafe enviorment and illegal actions.</li>
+                        <li>Eventfinder is not responsible for organizing events, however, the event organizer can get a personal helpline provided by Eventfinder that will guide on how to set up events and other preperations.</li>
+                        <li>Event organizer is aware that unexpected billing/payments or tax can be requested by EventFinder.</li>
+                        <li>Event organizer must be cool.</li>
+                        </ul>
+                        <div class="terms-btn">
+                            <a href="/eventform.html" class="btn">I Agree Of The Terms</a>
+                        </div>
+                    </div>
+                </div>
+        <section class="formboxes">
+            <form class="form-boxes">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" placeholder="Main title for event" class="event-name">
+            
+                <label for="event-description">Event Description:</label>
+                <textarea id="event-description" name="event-description" placeholder="Describe the event." class="event-description"></textarea>
 
-            <div class="category">
-                <select name="category">
-                
-                    <option value="">Category</option>
-                    <option value="1">Music</option>
-                    <option value="2">Family</option>
-                    <option value="3">Classic</option>
-                    <option value="4">Sport</option>
-                    <option value="5">Theater</option>
-                    <option value="6">Comedy</option>
-                    <option value="7">Entertainment</option>
-                    <option value="8">Concert</option>
-                    <option value="9">Festival</option>
-                    <option value="10">Other</option>
-                </select> 
-                
-            </div>
-        
-            <label for="event-date">Event Date:</label>
-            <input type="date" id="event-date" name="event-date" class="event-time">
-        
-            <label for="event-time">Event Time:</label>
-            <input type="time" id="event-time" name="event-time" class="event-time">
-        
-            <div class="location">
-                <select name="location">
-                
-                    <option value="">location</option>
-                    <option value="1">Sweden |Stockholm</option>
-                    <option value="2">Finland | Helsingfors</option>
-                    <option value="3">Norway | Oslo</option>
-                    <option value="4">Germany | Berlin</option>
-                    <option value="5">France | Paris</option>
-                    <option value="6">Denmark | Copenhagen</option>
-                    <option value="7">Spain | Madrid</option>
-                    <option value="8">USA | New York</option>
-                    <option value="9">Australia | Canberra</option>
-                    <option value="10">Canada | Ottowa</option>
-                </select> 
-            </div>
-            <label for="event-agenda">Event agenda:</label>
-            <textarea id="event-agenda" name="event-agenda" placeholder="What activities will take place?" class="event-agenda"></textarea>
-        </form>
-        <form class="submit-images">
+                <div class="category">
+                    <select name="category">
+                    
+                        <option value="">Category</option>
+                        <option value="1">Music</option>
+                        <option value="2">Family</option>
+                        <option value="3">Classic</option>
+                        <option value="4">Sport</option>
+                        <option value="5">Theater</option>
+                        <option value="6">Comedy</option>
+                        <option value="7">Entertainment</option>
+                        <option value="8">Concert</option>
+                        <option value="9">Festival</option>
+                        <option value="10">Other</option>
+                    </select> 
+                    
+                </div>
+            
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" class="event-time">
+            
+                <label for="event-time">Event Time:</label>
+                <input type="time" id="event-time" name="event-time" class="event-time">
+            
+                <div class="location">
+                    <select name="location">
+                    
+                        <option value="">location</option>
+                        <option value="1">Sweden |Stockholm</option>
+                        <option value="2">Finland | Helsingfors</option>
+                        <option value="3">Norway | Oslo</option>
+                        <option value="4">Germany | Berlin</option>
+                        <option value="5">France | Paris</option>
+                        <option value="6">Denmark | Copenhagen</option>
+                        <option value="7">Spain | Madrid</option>
+                        <option value="8">USA | New York</option>
+                        <option value="9">Australia | Canberra</option>
+                        <option value="10">Canada | Ottowa</option>
+                    </select> 
+                </div>
+                <label for="event-agenda">Event agenda:</label>
+                <textarea id="event-agenda" name="event-agenda" placeholder="What activities will take place?" class="event-agenda"></textarea>
+            </form>
+        </section>
+        <section class="submit-images">
             <h1 class="heading"> Pictures </h1>
-            <div class="images">
-                <img src="/image/images.png" class="image">
-                <img src="/image/images.png" class="image">
-                <img src="/image/images.png" class="image">
-                <img src="/image/images.png" class="image">
+            <div class="image-container">
+                <div class="images">
+                    <img src="/image/images.png" class="image">
+                </div>
+                <div class="images">
+                    <img src="/image/images.png" class="image">
+                </div>
+                <div class="images">
+                    <img src="/image/images.png" class="image">
+                </div>
+                <div class="images">
+                    <img src="/image/images.png" class="image">
+                </div>
             </div>
             <div class="choose-an-image">
                 <label for="event-image" class="file-upload">
@@ -122,10 +138,10 @@
                 </label>
                 <input type="file" id="event-image" class="event-image" hidden/>
             </div>
-            <div>
-                <input type="submit" value="submit event" class="submit">
-            </div>
-        </form>
+        </section>
+        <div class="submit">
+            <input type="submit" value="submit event" class="submit-btn">
+        </div>
     </form>
 
 </section>
