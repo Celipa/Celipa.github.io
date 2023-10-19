@@ -236,15 +236,16 @@ header {
         }
   
         .category {
-          position: absolute;
-          top: 1rem;
-          left: 45rem;
-          padding: 0.7rem 1rem;
-          font-size: 2rem;
-          color: $white;
-          background-color: $darkgray;
-          z-index: 1;
-          border-radius: 0.5rem;
+            position: absolute;
+            float: right;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.7rem 1rem;
+            font-size: 2rem;
+            color: $white;
+            background-color: $darkgray;
+            z-index: 1;
+            border-radius: 0.5rem;
         }
   
         .image {

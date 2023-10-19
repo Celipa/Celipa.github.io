@@ -515,6 +515,9 @@ header a:hover {
   .img {
     display: none;
   }
+  .image img {
+    width: 100% !important;
+  }
 }
 @media (max-width: 450px) {
   html {

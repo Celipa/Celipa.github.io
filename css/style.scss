@@ -59,7 +59,7 @@ section{
     }
 }
 
-
+/*navbar*/
 header{
     position: fixed;
     top:0; left:0; right:0;
@@ -240,7 +240,7 @@ header{
         }
     }
   }
-/*PRODUCTS*/
+/*Featured events*/
 .products {
     .box-container {
       display: flex;
@@ -268,8 +268,9 @@ header{
   
         .category {
           position: absolute;
+          float: right;
           top: 1rem;
-          left: 45rem;
+          right: 1rem;
           padding: 0.7rem 1rem;
           font-size: 2rem;
           color: $white;
@@ -595,5 +596,7 @@ header{
     .heading{
         font-size: 3rem;
     }
-
+    .products .box-container{
+        display: contents;
+    }
 }

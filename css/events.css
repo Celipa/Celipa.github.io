@@ -205,8 +205,9 @@ header .fa-bars {
 }
 .products .box-container .box .category {
   position: absolute;
+  float: right;
   top: 1rem;
-  left: 45rem;
+  right: 1rem;
   padding: 0.7rem 1rem;
   font-size: 2rem;
   color: white;

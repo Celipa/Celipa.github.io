@@ -569,6 +569,9 @@ header{
     .img{
         display: none;
     }
+    .image img{
+        width: 100% !important;
+    }
 }
 
 @media (max-width:450px){
@@ -580,4 +583,5 @@ header{
     .heading{
         font-size: 3rem;
     }
+
 }

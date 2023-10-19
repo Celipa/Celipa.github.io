@@ -49,6 +49,7 @@ section {
   background: rgba(65, 65, 65, 0.377);
 }
 
+/*navbar*/
 header {
   position: fixed;
   top: 0;
@@ -212,7 +213,7 @@ header .fa-bars {
   font-size: 1.3rem;
 }
 
-/*PRODUCTS*/
+/*Featured events*/
 .products .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -238,8 +239,9 @@ header .fa-bars {
 }
 .products .box-container .box .category {
   position: absolute;
+  float: right;
   top: 1rem;
-  left: 45rem;
+  right: 1rem;
   padding: 0.7rem 1rem;
   font-size: 2rem;
   color: white;
@@ -505,5 +507,8 @@ header .fa-bars {
   }
   .heading {
     font-size: 3rem;
+  }
+  .products .box-container {
+    display: contents;
   }
 }/*# sourceMappingURL=style.css.map */
