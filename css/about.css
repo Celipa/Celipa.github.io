@@ -1,3 +1,5 @@
+/*----------*/
+/*-----------*/
 * {
   margin: 0;
   padding: 0;
@@ -17,13 +19,14 @@ html {
   overflow-x: hidden;
 }
 
+/*navbar*/
 section {
   padding: 2rem;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-/*HEADER*/
+/*panel divider*/
 .heading {
   text-align: center;
   font-size: 4rem;
@@ -33,6 +36,7 @@ section {
   background: rgb(56, 65, 95);
 }
 
+/*Learn more button*/
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -43,8 +47,7 @@ section {
   cursor: pointer;
   font-size: 1.8rem;
 }
-
-.btn:hover {
+.btn:grey {
   background: rgba(65, 65, 65, 0.377);
 }
 
@@ -89,59 +92,13 @@ header .fa-bars {
 }
 header .icons a {
   font-size: 2.5rem;
-  color: rgb(202, 202, 202);
+  color: rgb(138, 138, 138);
   margin-left: 1.5rem;
 }
 header a:hover {
   color: gray;
 }
 
-/*
-header .flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .logo{
-    font-size: 3rem;
-    color:$whitecolor;
-    font-weight: bolder;
-}
-header .navbar a{
-    font-size: 2rem;
-    padding:0 1.5rem;
-    color:$whitecolor;
-}
-
-header .navbar a:hover{
-    color:$hover;
-}
-
-header .icons a{
-    font-size: 2.5rem;
-    color:$lightgray;
-    margin-left: 1.5rem;
-}
-
-header .icons a:hover{
-    color:$hover;
-}
-
-header #toggler{
-    display: none;
-}
-
-header .fa-bars{
-    font-size: 3rem;
-    color:$whitecolor;
-    border-radius: .5rem;
-    padding:.5rem 1.5rem;
-    cursor: pointer;
-    border:.1rem solid rgba(255, 255, 255, 0.3);
-    display: none;
-}
-*/
 /*FRONT PANEL*/
 .home-container {
   background: url(../image/someone_buying_tickets_on_their_phone.webp) no-repeat;
@@ -334,10 +291,19 @@ header .fa-bars{
   width: 100%;
 }
 
+.footer {
+  border-radius: 1rem;
+  padding: 2rem;
+}
 .footer .box-container {
+  background-color: rgb(235, 235, 235);
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  padding-left: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 0.5rem;
 }
 .footer .box-container .box {
   flex: 1 1 25rem;
@@ -353,7 +319,7 @@ header .fa-bars{
 }
 .footer .box-container .box a {
   display: block;
-  color: rgb(202, 202, 202);
+  color: rgb(138, 138, 138);
   font-size: 1.5rem;
   padding: 1rem 0;
 }

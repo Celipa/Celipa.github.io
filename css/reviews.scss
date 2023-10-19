@@ -1,10 +1,17 @@
-$panelcolor: rgb(56, 65, 95);
-$whitecolor: white;
-$lightgray:rgb(202, 202, 202);
-$darkgraycolor:rgb(44, 44, 44);
-$grayopacity:rgba(65, 65, 65, 0.377);
-$hover:gray;
 
+$maincolor: rgb(56, 65, 95);
+$white: white;
+$lightgray:rgb(138, 138, 138);
+$darkgray:rgb(44, 44, 44);
+$darkgrayopacity:rgba(65, 65, 65, 0.377);
+$grey:gray;
+$videotextbg:rgb(255, 255, 255);
+$bookticketsbutton:rgb(202, 172, 0);
+$cardwhite:#e7e7e7;
+$checkoutborder: #fff7;
+$cardboxshadow:rgba(0,0,0,.1);
+$footerbackground:rgb(235, 235, 235);
+/*-----------*/
 *{
     margin:0; padding:0;
     box-sizing: border-box;
@@ -32,15 +39,15 @@ section{
 .heading{
     text-align: center;
     font-size: 4rem;
-    color:$whitecolor;
+    color:$white;
     padding:1rem;
     margin:2rem 0;
-    background:$panelcolor;
+    background:$maincolor;
 }
 header{
     position: fixed;
     top:0; left:0; right:0;
-    background:$panelcolor;
+    background:$maincolor;
     z-index: 1000;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 
@@ -52,16 +59,16 @@ header{
 
     .logo{
         font-size: 3rem;
-        color:$whitecolor;
+        color:$white;
         font-weight: bolder;
     }
 
     .navbar a{
         font-size: 2rem;
         padding:0 1.5rem;
-        color:$whitecolor;
+        color:$white;
         a:hover{
-            color:$hover;
+            color:$grey;
         }
     }
 
@@ -71,7 +78,7 @@ header{
 
     .fa-bars{
         font-size: 3rem;
-        color:$whitecolor;
+        color:$white;
         border-radius: .5rem;
         padding:.5rem 1.5rem;
         cursor: pointer;
@@ -84,7 +91,7 @@ header{
         margin-left: 1.5rem;
     }
     a:hover{
-        color:$hover;
+        color:$grey;
     }
     
 }
@@ -115,12 +122,12 @@ header{
             flex:1 1 40rem;
             h3{
                 font-size: 3rem;
-                color:$darkgraycolor;
+                color:$darkgray;
                 padding-bottom: .5rem;
             }
             p{
                 font-size: 1.5rem;
-                color:$darkgraycolor;
+                color:$darkgray;
                 padding:.5rem 0;
                 padding-top: 1rem;
                 line-height: 1.8;
@@ -139,7 +146,7 @@ header{
         gap:1.5rem;
 
         .box{
-            background:$whitecolor;
+            background:$white;
             border:.1rem solid rgba(0,0,0,.1);
             padding:2rem;
             display: flex;
@@ -180,8 +187,8 @@ header{
             top:1rem; left:1rem;
             padding:.7rem 1rem;
             font-size: 2rem;
-            color:$whitecolor;
-            background:$darkgraycolor;
+            color:$white;
+            background:$darkgray;
             z-index: 1;
             border-radius: .5rem;
         }
@@ -251,7 +258,7 @@ header{
         
 
     }
-    .box:hover {
+    .box:grey {
         .image{
             img{
                 transform: scale(1.5);
@@ -367,15 +374,15 @@ header{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background:$darkgraycolor;
-    color:$whitecolor;
+    background:$darkgray;
+    color:$white;
     padding:1rem 3rem;
     cursor: pointer;
     font-size: 1.8rem;
 }
 
-.btn:hover{
-    background:$grayopacity;
+.btn:grey{
+    background:$darkgrayopacity;
 }
 /*FOOTER*/
 .footer{
@@ -388,7 +395,7 @@ header{
             flex:1 1 25rem;
             /*--------*/
             h3{
-                color:$darkgraycolor;
+                color:$darkgray;
                 font-size: 2.5rem;
                 padding:1rem 0;
             }
@@ -402,7 +409,7 @@ header{
             /*--------*/
             a:hover{
                 text-decoration: underline;
-                color:$darkgraycolor
+                color:$darkgray
             }
             /*--------*/
             img{
@@ -416,7 +423,7 @@ header{
         margin-top: 1.5rem;
         padding-top: 2.5rem;
         font-size: 2rem;
-        color:$darkgraycolor;
+        color:$darkgray;
         border-top: .1rem solid rgba(0,0,0,.1);
     }
     
@@ -458,7 +465,7 @@ header{
     header .navbar a{
         margin:1.5rem;
         padding:1.5rem;
-        background:$panelcolor;
+        background:$maincolor;
         border:.1rem solid rgba(0,0,0,.1);
         display: block;
     }

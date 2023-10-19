@@ -1,3 +1,4 @@
+/*---------------*/
 * {
   margin: 0;
   padding: 0;
@@ -64,7 +65,7 @@ header .navbar a {
   padding: 0 1.5rem;
   color: white;
 }
-header .navbar a a:hover {
+header .navbar a a:gray {
   color: gray;
 }
 header #toggler {
@@ -81,16 +82,16 @@ header .fa-bars {
 }
 header .icons a {
   font-size: 2.5rem;
-  color: rgb(202, 202, 202);
+  color: rgb(138, 138, 138);
   margin-left: 1.5rem;
 }
-header a:hover {
+header a:gray {
   color: gray;
 }
 
 /*------------*/
 .tou-container {
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.295);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6862745098);
   border-radius: 2rem;
   margin-bottom: 2rem;
@@ -99,7 +100,6 @@ header a:hover {
   border-radius: 2rem;
   max-width: 50rem;
   min-width: 20rem;
-  background-color: rgba(255, 255, 255, 0.6862745098);
   padding-left: 3rem;
   padding-bottom: 3rem;
 }
@@ -120,8 +120,8 @@ header a:hover {
   line-height: 1;
 }
 .tou-container .content .terms-btn {
-  background-color: rgb(202, 202, 202);
-  color: #eee;
+  background-color: rgb(138, 138, 138);
+  color: white;
   border-radius: 1rem;
   padding: 1rem;
   margin-right: 70%;
@@ -141,7 +141,7 @@ header a:hover {
   font-size: 1.6rem;
   margin-top: 5rem;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: rgb(44, 44, 44);
   background-color: #e7e7e7;
   padding: 2rem;
   border-radius: 1rem;
@@ -160,12 +160,12 @@ header a:hover {
   border: none;
   border-radius: 0.3rem;
   margin-bottom: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .application select[name=category] {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .application input[type=date],
 .application input[type=time] {
@@ -173,19 +173,19 @@ header a:hover {
   border: none;
   border-radius: 0.3rem;
   margin-bottom: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .application select[name=location] {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   margin-top: 3rem;
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 .application ::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.301);
+  color: rgba(0, 0, 0, 0.1);
 }
 .application ::placeholder {
-  color: rgba(0, 0, 0, 0.301);
+  color: rgba(0, 0, 0, 0.1);
 }
 
 /*submit button*/
@@ -207,7 +207,7 @@ header a:hover {
      object-fit: cover;
   border: 1rem solid white;
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   flex: 1;
   margin: 1rem;
 }
@@ -259,7 +259,7 @@ header a:hover {
   padding: 2rem 2.5rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  background: #fff;
+  background: white;
   border-radius: 0.5rem;
 }
 .contact .row form .btn {
@@ -272,14 +272,14 @@ header a:hover {
   font-size: 1.7rem;
   padding: 1rem;
   text-transform: none;
-  color: #333;
+  color: rgb(44, 44, 44);
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   width: 100%;
   margin: 0.7rem 0;
 }
 .contact .row form .box:focus {
-  border-color: var(--pink);
+  border-color: rgb(44, 44, 44);
 }
 .contact .row form textarea {
   height: 15rem;
@@ -292,6 +292,11 @@ header a:hover {
   width: 100%;
 }
 
+.footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+}
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -313,7 +318,7 @@ header a:hover {
 }
 .footer .box-container .box a {
   display: block;
-  color: rgb(202, 202, 202);
+  color: rgb(138, 138, 138);
   font-size: 1.5rem;
   padding: 1rem 0;
 }
@@ -472,7 +477,7 @@ header a:hover {
     right: 0;
     position: absolute;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-    background: #eee;
+    background: white;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }

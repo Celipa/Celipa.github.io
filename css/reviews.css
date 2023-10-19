@@ -1,3 +1,4 @@
+/*-----------*/
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +75,7 @@ header .fa-bars {
 }
 header .icons a {
   font-size: 2.5rem;
-  color: rgb(202, 202, 202);
+  color: rgb(138, 138, 138);
   margin-left: 1.5rem;
 }
 header a:hover {
@@ -232,10 +233,10 @@ header a:hover {
   font-weight: lighter;
   text-decoration: line-through;
 }
-.products .box-container .box:hover .image img {
+.products .box-container .box:grey .image img {
   transform: scale(1.5);
 }
-.products .box-container .box:hover .image .icons {
+.products .box-container .box:grey .image .icons {
   bottom: 0;
 }
 
@@ -349,7 +350,7 @@ header a:hover {
   font-size: 1.8rem;
 }
 
-.btn:hover {
+.btn:grey {
   background: rgba(65, 65, 65, 0.377);
 }
 
@@ -373,7 +374,7 @@ header a:hover {
 }
 .footer .box-container .box a {
   display: block;
-  color: rgb(202, 202, 202);
+  color: rgb(138, 138, 138);
   font-size: 1.5rem;
   padding: 1rem 0;
 }

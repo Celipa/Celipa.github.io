@@ -1,9 +1,13 @@
-$panelcolor: rgb(56, 65, 95);
-$whitecolor: white;
-$lightgray:rgb(202, 202, 202);
-$darkgraycolor:rgb(44, 44, 44);
-$grayopacity:rgba(65, 65, 65, 0.377);
-$hover:gray;
+$maincolor: rgb(56, 65, 95);
+$white: white;
+$lightgray:rgb(138, 138, 138);
+$darkgray:rgb(44, 44, 44);
+$darkgrayopacity:rgba(65, 65, 65, 0.377);
+$gray:gray;
+$cardwhite:#e7e7e7;
+$checkoutborder: #fff7;
+$cardboxshadow:rgba(0,0,0,.1);
+$footerbackground:rgb(235, 235, 235);
 
 *{
     margin:0; padding:0;
@@ -22,34 +26,36 @@ html{
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
+/*--Navbar*/
 
 section{
     padding:2rem;
     margin: 0 auto;
     max-width: 1200px;
 }
-/*HEADER*/
+
+/*panel dividers with title*/
 .heading{
     text-align: center;
     font-size: 4rem;
-    color:$whitecolor;
+    color:$white;
     padding:1rem;
     margin:2rem 0;
-    background:$panelcolor;
+    background:$maincolor;
 }
 
-
+/*Learn more button*/
 .btn{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background:$darkgraycolor;
-    color:$whitecolor;
+    background:$darkgray;
+    color:$white;
     padding:1rem 3rem;
     cursor: pointer;
     font-size: 1.8rem;
     &:hover{
-        background:$grayopacity;
+        background:$darkgrayopacity;
     }
 }
 
@@ -57,29 +63,30 @@ section{
 header{
     position: fixed;
     top:0; left:0; right:0;
-    background:$panelcolor;
+    background:$maincolor;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem $cardboxshadow;
 
     .flex{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
     }
 
     .logo{
         font-size: 3rem;
-        color:$whitecolor;
+        color:$white;
         font-weight: bolder;
     }
 
     .navbar a{
         font-size: 2rem;
         padding:0 1.5rem;
-        color:$whitecolor;
+        color:$white;
 
         &:hover{
-            color:$hover;
+            color:$gray;
         }
     }
 
@@ -89,7 +96,7 @@ header{
         margin-left: 1.5rem;
 
         &:hover{
-            color:$hover;
+            color:$darkgray;
         }
     }
 
@@ -99,7 +106,7 @@ header{
 
     .fa-bars{
         font-size: 3rem;
-        color:$whitecolor;
+        color:$white;
         border-radius: .5rem;
         padding:.5rem 1.5rem;
         cursor: pointer;
@@ -125,19 +132,19 @@ header{
     
             h1 {
             font-size: 6rem;
-            color: $darkgraycolor;
+            color: $darkgray;
             }
     
             span {
             font-size: 3.5rem;
-            color: $hover;
+            color: $gray;
             padding: 1rem 0;
             line-height: 1.5;
             }
     
             p {
             font-size: 1.5rem;
-            color: $darkgraycolor;
+            color: $darkgray;
             padding: 1rem 0;
             line-height: 1.8;
             }
@@ -160,9 +167,9 @@ header{
         position: relative;
             video {
                 width: 100%;
-                border: 1.5rem solid $whitecolor;
+                border: 1.5rem solid $white;
                 border-radius: .5rem;
-                box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+                box-shadow: 0 .5rem 1rem $cardboxshadow;
                 height: 100%;
                 object-fit: cover;
             }
@@ -171,7 +178,7 @@ header{
                 top: 50%;
                 transform: translateY(-50%);
                 font-size: 3rem;
-                background: $whitecolor;
+                background: $white;
                 width: 100%;
                 padding: 1rem 2rem;
                 text-align: center;
@@ -182,13 +189,13 @@ header{
         flex: 1 1 40rem;
             h3 {
                 font-size: 3rem;
-                color: $darkgraycolor;
+                color: $darkgray;
                 padding-bottom: .5rem;
             }
 
             p {
                 font-size: 1.5rem;
-                color: $darkgraycolor;
+                color: $darkgray;
                 padding: .5rem 0;
                 padding-top: 1rem;
                 line-height: 1.8;
@@ -198,309 +205,286 @@ header{
 }
 
 /*INFO BOXES*/
-.icons-container{
-    background:#eee;
+.icons-container {
+    background: $cardboxshadow;
     padding: 2rem 0;
-}
-
-.icons-container .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.icons-container .box-container .box{
-    background:$whitecolor;
-    border:.1rem solid rgba(0,0,0,.1);
-    padding:2rem;
-    display: flex;
-    align-items: center;
-    flex:1 1 25rem;
-}
-
-.icons-container .box-container .box img{
-    height:5rem;
-    margin-right: 2rem;
-}
-
-.icons-container .box-container .box h3{
-    color:#333;
-    padding-bottom: .5rem;
-    font-size: 1.5rem;
-}
-
-.icons-container .box-container .box span{
-    color:#555;
-    font-size: 1.3rem;
-}
+  
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  
+        .box {
+            background: $white;
+            border: 0.1rem solid $cardboxshadow;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            flex: 1 1 25rem;
+    
+            img {
+            height: 5rem;
+            margin-right: 2rem;
+            }
+    
+            h3 {
+            color: $darkgray;
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+            }
+    
+            span {
+            color: $darkgray;
+            font-size: 1.3rem;
+            }
+        }
+    }
+  }
 /*PRODUCTS*/
-.products .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.products .box-container .box{
-    flex:1 1 30rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    border:.1rem solid rgba(0,0,0,.1);
-    position: relative;    
-}
-
-.products .box-container .box .discount{
-    position: absolute;
-    top:1rem; left:1rem;
-    padding:.7rem 1rem;
-    font-size: 2rem;
-    color:$whitecolor;
-    background:$darkgraycolor;
-    z-index: 1;
-    border-radius: .5rem;
-}
-.products .box-container .box .category{
-    position: absolute;
-    top:1rem; left:45rem;
-    padding:.7rem 1rem;
-    font-size: 2rem;
-    color:$whitecolor;
-    background-color: $darkgraycolor;
-    z-index: 1;
-    border-radius: .5rem;
-}
-
-.products .box-container .box .image{
-    position: relative;
-    text-align: center;
-    padding-top: 2rem;
-    overflow:hidden;
-}
-
-.products .box-container .box .image img{
-    height:25rem;
-    width: 45rem;
-    object-fit: cover;
-    border-radius: 2px;
-}
-
-.products .box-container .box:hover .image img{
-    transform: scale(1.5);
-}
-
-.products .box-container .box .image .icons{
-    position: absolute;
-    bottom:-7rem; left:0; right:0;
-    display: flex;
-}
-
-.products .box-container .box:hover .image .icons{
-    bottom:0;
-}
-
-.products .box-container .box .image .icons a{
-    height: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    width:50%;
-    background-color: rgba(27, 27, 27, 0.589);
-    color:#fff;
-}
-
-.products .box-container .box .image .icons .cart-btn{
-    border-left: .1rem solid #fff7;
-    border-right: .1rem solid #fff7;
-    width:100%;
-}
-
-.products .box-container .box .image .icons a:hover{
-    background:#333;
-}
-
-.products .box-container .box .content{
-    padding:2rem;
-    text-align: center;
-}
-
-.products .box-container .box .content h3{
-    font-size: 2.5rem;
-    color:#333;
-}
-
-.products .box-container .box .content .price{
-    font-size: 2.5rem;
-    color:var(--pink);
-    font-weight: bolder;
-    padding-top: 1rem;
-}
-
-.products .box-container .box .content .price span{
-    font-size: 1.5rem;
-    color:#999;
-    font-weight: lighter;
-    text-decoration: line-through;
-}
+.products {
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  
+      .box {
+        flex: 1 1 30rem;
+        box-shadow: 0 0.5rem 1.5rem $cardboxshadow;
+        border-radius: 0.5rem;
+        border: 0.1rem solid $cardboxshadow;
+        position: relative;
+  
+        .discount {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          padding: 0.7rem 1rem;
+          font-size: 2rem;
+          color: $white;
+          background: $darkgray;
+          z-index: 1;
+          border-radius: 0.5rem;
+        }
+  
+        .category {
+          position: absolute;
+          top: 1rem;
+          left: 45rem;
+          padding: 0.7rem 1rem;
+          font-size: 2rem;
+          color: $white;
+          background-color: $darkgray;
+          z-index: 1;
+          border-radius: 0.5rem;
+        }
+  
+        .image {
+          position: relative;
+          text-align: center;
+          padding-top: 2rem;
+          overflow: hidden;
+  
+          img {
+            height: 25rem;
+            width: 45rem;
+            object-fit: cover;
+            border-radius: 2px;
+          }
+  
+          .icons {
+            position: absolute;
+            bottom: -7rem;
+            left: 0;
+            right: 0;
+            display: flex;
+  
+            a {
+              height: 5rem;
+              line-height: 5rem;
+              font-size: 2rem;
+              width: 50%;
+              background-color: rgba(27, 27, 27, 0.589);
+              color: $white;
+  
+              &:hover {
+                background: $darkgray;
+              }
+            }
+  
+            .cart-btn {
+              border-left: 0.1rem solid $checkoutborder;
+              border-right: 0.1rem solid $checkoutborder;
+              width: 100%;
+            }
+          }
+        }
+  
+        &:hover {
+          .image img {
+            transform: scale(1.5);
+          }
+  
+          .image .icons {
+            bottom: 0;
+          }
+        }
+  
+        .content {
+          padding: 2rem;
+          text-align: center;
+  
+          h3 {
+            font-size: 2.5rem;
+            color: $darkgray;
+          }
+  
+          .price {
+            font-size: 2.5rem;
+            color: $darkgray;
+            font-weight: bolder;
+            padding-top: 1rem;
+  
+            span {
+              font-size: 1.5rem;
+              color: $lightgray;
+              font-weight: lighter;
+              text-decoration: line-through;
+            }
+          }
+        }
+      }
+    }
+  }
 /*REVIEW*/
-.review .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.review .box-container .box{
-    flex:1 1 30rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    padding:3rem 2rem;
-    position: relative;
-    border:.1rem solid rgba(0,0,0,.1);
-}
-
-.review .box-container .box .fa-quote-right{
-    position: absolute;
-    bottom:3rem; right:3rem;
-    font-size: 6rem;
-    color:#eee;
-}
-
-.review .box-container .box .stars i{
-    color:var(--pink);
-    font-size: 2rem;
-}
-
-.review .box-container .box p{
-    color:#999;
-    font-size: 1.5rem;
-    line-height: 1.8;
-    padding-top: 2rem;
-}
-
-.review .box-container .box .user{
-    display: flex;
-    align-items: center;
-    padding-top: 2rem;
-}
-
-.review .box-container .box .user img{
-    height:6rem;
-    width:6rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 1rem;
-}
-
-.review .box-container .box .user h3{
-    font-size: 2rem;
-    color:#333;
-}
-
-.review .box-container .box .user span{
-    font-size: 1.5rem;
-    color:#999;
-}
+.review {
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  
+        .box {
+            flex: 1 1 30rem;
+            box-shadow: 0 0.5rem 1.5rem $cardboxshadow;
+            border-radius: 0.5rem;
+            padding: 3rem 2rem;
+            position: relative;
+            border: 0.1rem solid $cardboxshadow;
+    
+            .fa-quote-right {
+            position: absolute;
+            bottom: 3rem;
+            right: 3rem;
+            font-size: 6rem;
+            color: $white;
+            }
+    
+            .stars {
+            i {
+                color: $darkgray;
+                font-size: 2rem;
+            }
+            }
+    
+            p {
+            color: $lightgray;
+            font-size: 1.5rem;
+            line-height: 1.8;
+            padding-top: 2rem;
+            }
+    
+            .user {
+            display: flex;
+            align-items: center;
+            padding-top: 2rem;
+    
+            img {
+                height: 6rem;
+                width: 6rem;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 1rem;
+            }
+    
+            h3 {
+                font-size: 2rem;
+                color: $darkgray;
+            }
+    
+            span {
+                font-size: 1.5rem;
+                color: $lightgray;
+            }
+            }
+        }
+    }
+  }
 /*CONTACT US*/
-.contact .row{
-    display: flex;
-    flex-wrap: wrap-reverse;
-    gap:1.5rem;
-    align-items: center;
-}
-
-.contact .row form{
-    flex:1 1 40rem;
-    padding:2rem 2.5rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border:.1rem solid rgba(0,0,0,.1);
-    background: #fff;
-    border-radius: .5rem;
-}
-
-.contact .row .image{
-    flex:1 1 40rem;
-}
-
-.contact .row .image img{
-    width: 100%;
-}
-
-.contact .row form .box{
-    padding:1rem;
-    font-size: 1.7rem;
-    color:#333;
-    text-transform: none;
-    border:.1rem solid rgba(0,0,0,.1);
-    border-radius: .5rem;
-    margin:.7rem 0;
-    width: 100%;
-}
-
-.contact .row form .box:focus{
-    border-color: var(--pink);
-}
-
-.contact .row form textarea{
-    height: 15rem;
-    resize: none;
-}
+.contact {
+    .row {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      gap: 1.5rem;
+      align-items: center;
+  
+        form {
+            flex: 1 1 40rem;
+            padding: 2rem 2.5rem;
+            box-shadow: 0 .5rem 1.5rem $cardboxshadow;
+            border: 0.1rem solid $cardboxshadow;
+            background: $white;
+            border-radius: 0.5rem;
+            
+            .box {
+            padding: 1rem;
+            font-size: 1.7rem;
+            color: $darkgray;
+            text-transform: none;
+            border: 0.1rem solid $cardboxshadow;
+            border-radius: 0.5rem;
+            margin: 0.7rem 0;
+            width: 100%;
+    
+            &:focus {
+                border-color: $darkgray;
+            }
+            }
+    
+            textarea {
+            height: 15rem;
+            resize: none;
+            }
+        }
+    
+        .image {
+            flex: 1 1 40rem;
+    
+            img {
+            width: 100%;
+            }
+        }
+    }
+  }
 /*FOOTER*/
-/*
-.footer .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.footer .box-container .box{
-    flex:1 1 25rem;
-}
-
-.footer .box-container .box h3{
-    color:#333;
-    font-size: 2.5rem;
-    padding:1rem 0;
-}
-
-.footer .box-container .box a{
-    display: block;
-    color:#666;
-    font-size: 1.5rem;
-    padding:1rem 0;
-}
-
-.footer .box-container .box a:hover{
-    color:var(--pink);
-    text-decoration: underline;
-}
-
-.footer .box-container .box  img{
-    margin-top: 1rem;
-}
-
-.footer .credit{
-    text-align: center;
-    padding:1.5rem;
-    margin-top: 1.5rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color:#333;
-    border-top: .1rem solid rgba(0,0,0,.1);
-    padding-bottom: 8rem; 
-}
-
-.footer .credit span{
-    color:var(--pink);
-}
-*/
 .footer{
+    border-radius: 1rem;
+    padding: 2rem;
     .box-container{
+        background-color: $footerbackground;
         display: flex;
         flex-wrap: wrap;
         gap:1.5rem;
+        padding-left: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: .5rem;
+        
+        
     
         .box{
             flex:1 1 25rem;
             /*--------*/
             h3{
-                color:$darkgraycolor;
+                color:$darkgray;
                 font-size: 2.5rem;
                 padding:1rem 0;
             }
@@ -514,7 +498,7 @@ header{
             /*--------*/
             a:hover{
                 text-decoration: underline;
-                color:$darkgraycolor
+                color:$darkgray
             }
             /*--------*/
             img{
@@ -528,8 +512,8 @@ header{
         margin-top: 1.5rem;
         padding-top: 2.5rem;
         font-size: 2rem;
-        color:$darkgraycolor;
-        border-top: .1rem solid rgba(0,0,0,.1);
+        color:$darkgray;
+        border-top: .1rem solid $cardboxshadow;
     }
     
 } 
@@ -567,8 +551,8 @@ header{
     header .navbar{
         position:absolute;
         top:100%; left:0; right:0;
-        background:#eee;
-        border-top: .1rem solid rgba(0,0,0,.1);
+        background:$white;
+        border-top: .1rem solid $cardboxshadow;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -579,8 +563,8 @@ header{
     header .navbar a{
         margin:1.5rem;
         padding:1.5rem;
-        background:$panelcolor;
-        border:.1rem solid rgba(0,0,0,.1);
+        background:$maincolor;
+        border:.1rem solid $cardboxshadow;
         display: block;
     }
 

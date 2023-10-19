@@ -1,9 +1,17 @@
-$panelcolor: rgb(56, 65, 95);
-$whitecolor: white;
-$lightgray:rgb(202, 202, 202);
-$darkgraycolor:rgb(44, 44, 44);
-$grayopacity:rgba(65, 65, 65, 0.377);
-$hover:gray;
+$maincolor: rgb(56, 65, 95);
+$white: white;
+$lightgray:rgb(138, 138, 138);
+$darkgray:rgb(44, 44, 44);
+$darkgrayopacity:rgba(65, 65, 65, 0.377);
+$grey:gray;
+$videotextbg:rgb(255, 255, 255);
+$bookticketsbutton:rgb(202, 172, 0);
+$cardwhite:#e7e7e7;
+$checkoutborder: #fff7;
+$cardboxshadow:rgba(0,0,0,.1);
+$footerbackground:rgb(235, 235, 235);
+/*----------*/
+
 
 *{
     margin:0; padding:0;
@@ -22,42 +30,43 @@ html{
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
-
+/*navbar*/
 section{
     padding:2rem;
     margin: 0 auto;
     max-width: 1200px;
 }
-/*HEADER*/
+/*panel divider*/
 .heading{
     text-align: center;
     font-size: 4rem;
-    color:$whitecolor;
+    color:$white;
     padding:1rem;
     margin:2rem 0;
-    background:$panelcolor;
+    background:$maincolor;
 }
 
 
+/*Learn more button*/
 .btn{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background:$darkgraycolor;
-    color:$whitecolor;
+    background:$darkgray;
+    color:$white;
     padding:1rem 3rem;
     cursor: pointer;
     font-size: 1.8rem;
+    &:grey{
+        background:$darkgrayopacity;
+    }
 }
 
-.btn:hover{
-    background:$grayopacity;
-}
 
 header{
     position: fixed;
     top:0; left:0; right:0;
-    background:$panelcolor;
+    background:$maincolor;
     z-index: 1000;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 
@@ -65,20 +74,21 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
     }
 
     .logo{
         font-size: 3rem;
-        color:$whitecolor;
+        color:$white;
         font-weight: bolder;
     }
 
     .navbar a{
         font-size: 2rem;
         padding:0 1.5rem;
-        color:$whitecolor;
+        color:$white;
         a:hover{
-            color:$hover;
+            color:$gray;
         }
     }
 
@@ -88,7 +98,7 @@ header{
 
     .fa-bars{
         font-size: 3rem;
-        color:$whitecolor;
+        color:$white;
         border-radius: .5rem;
         padding:.5rem 1.5rem;
         cursor: pointer;
@@ -101,56 +111,11 @@ header{
         margin-left: 1.5rem;
     }
     a:hover{
-        color:$hover;
+        color:$gray;
     }
     
 }
-/*
-header .flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-header .logo{
-    font-size: 3rem;
-    color:$whitecolor;
-    font-weight: bolder;
-}
-header .navbar a{
-    font-size: 2rem;
-    padding:0 1.5rem;
-    color:$whitecolor;
-}
-
-header .navbar a:hover{
-    color:$hover;
-}
-
-header .icons a{
-    font-size: 2.5rem;
-    color:$lightgray;
-    margin-left: 1.5rem;
-}
-
-header .icons a:hover{
-    color:$hover;
-}
-
-header #toggler{
-    display: none;
-}
-
-header .fa-bars{
-    font-size: 3rem;
-    color:$whitecolor;
-    border-radius: .5rem;
-    padding:.5rem 1.5rem;
-    cursor: pointer;
-    border:.1rem solid rgba(255, 255, 255, 0.3);
-    display: none;
-}
-*/
 /*FRONT PANEL*/
 .home-container{
     background:url(../image/someone_buying_tickets_on_their_phone.webp) no-repeat;
@@ -170,17 +135,17 @@ header .fa-bars{
         padding: 20px;
         h3{
             font-size: 6rem;
-            color:$darkgraycolor;
+            color:$darkgray;
         }
         span{
             font-size: 3.5rem;
-            color:$hover;
+            color:$grey;
             padding:1rem 0;
             line-height: 1.5;
         }
         p{
             font-size: 1.5rem;
-            color:$darkgraycolor;
+            color:$darkgray;
             padding:1rem 0;
             line-height: 1.8;
         }
@@ -203,12 +168,12 @@ header .fa-bars{
         /*rubrik 1*/
         h3{
             font-size: 3rem;
-            color:$darkgraycolor;
+            color:$darkgray;
             padding-bottom: .5rem;
         }
         p{
             font-size: 1.5rem;
-            color:$darkgraycolor;
+            color:$darkgray;
             padding:.5rem 0;
             padding-top: 1rem;
             line-height: 1.8;
@@ -220,14 +185,14 @@ header .fa-bars{
     p{
         text-align: center;
         font-size: 1.7rem;
-            color:$darkgraycolor;
+            color:$darkgray;
             padding:.5rem 0;
             padding-top: 1rem;
             line-height: 1.8;
     }
     img{
         width:100%;
-            border:1.5rem solid $whitecolor;
+            border:1.5rem solid $white;
             border-radius: .5rem;
             box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
             height: 100%;
@@ -250,7 +215,7 @@ header .fa-bars{
     }
     img{
         width:50%;
-        border:1.5rem solid $whitecolor;
+        border:1.5rem solid $white;
         border-radius: .5rem;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
         object-fit: cover;
@@ -258,7 +223,7 @@ header .fa-bars{
     .info{
         max-width:40%;
         flex-direction: column;
-        border:1.5rem solid $whitecolor;
+        border:1.5rem solid $white;
         border-radius: .5rem;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
         h3{
@@ -271,7 +236,7 @@ header .fa-bars{
         h2{
             margin-top: 7rem;
             padding: 4rem;
-            border:1.5rem solid $whitecolor;
+            border:1.5rem solid $white;
             border-radius: .5rem;
             box-shadow: 0 .5rem 1rem rgba(0,0,0,.3); 
             font-style: italic;
@@ -284,7 +249,7 @@ header .fa-bars{
     .contact-info{
         max-width:100%;
         .ceo-contact{
-            border:1.5rem solid $whitecolor;
+            border:1.5rem solid $white;
             border-radius: .5rem;
             box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
             
@@ -301,7 +266,7 @@ header .fa-bars{
             }
             a:hover{
                 text-decoration: underline;
-                color:$darkgraycolor
+                color:$darkgray
             }
         }
     }
@@ -355,16 +320,25 @@ header .fa-bars{
 }
 
 .footer{
+    border-radius: 1rem;
+    padding: 2rem;
     .box-container{
+        background-color: $footerbackground;
         display: flex;
         flex-wrap: wrap;
         gap:1.5rem;
+        padding-left: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: .5rem;
+        
+        
     
         .box{
             flex:1 1 25rem;
             /*--------*/
             h3{
-                color:$darkgraycolor;
+                color:$darkgray;
                 font-size: 2.5rem;
                 padding:1rem 0;
             }
@@ -378,7 +352,7 @@ header .fa-bars{
             /*--------*/
             a:hover{
                 text-decoration: underline;
-                color:$darkgraycolor
+                color:$darkgray
             }
             /*--------*/
             img{
@@ -392,8 +366,8 @@ header .fa-bars{
         margin-top: 1.5rem;
         padding-top: 2.5rem;
         font-size: 2rem;
-        color:$darkgraycolor;
-        border-top: .1rem solid rgba(0,0,0,.1);
+        color:$darkgray;
+        border-top: .1rem solid $cardboxshadow;
     }
     
 } 
@@ -434,7 +408,7 @@ header .fa-bars{
     header .navbar a{
         margin:1.5rem;
         padding:1.5rem;
-        background:$panelcolor;
+        background:$maincolor;
         border:.1rem solid rgba(0,0,0,.1);
         display: block;
     }

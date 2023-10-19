@@ -1,3 +1,4 @@
+/*------------*/
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +33,7 @@ section {
   text-align: center;
 }
 
+/*Learn more button*/
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -42,7 +44,6 @@ section {
   cursor: pointer;
   font-size: 1.8rem;
 }
-
 .btn:hover {
   background: rgba(65, 65, 65, 0.377);
 }
@@ -88,7 +89,7 @@ header .fa-bars {
 }
 header .icons a {
   font-size: 2.5rem;
-  color: rgb(202, 202, 202);
+  color: rgb(138, 138, 138);
   margin-left: 1.5rem;
 }
 header a:hover {
@@ -146,7 +147,17 @@ header a:hover {
   font-size: 2rem;
 }
 .about .eventinfo .text ul li {
-  font-style: normal;
+  font-weight: 200;
+}
+.about .eventinfo .text ul .Green {
+  color: rgb(30, 139, 30);
+}
+.about .eventinfo .text ul .Dawson {
+  color: rgb(201, 49, 49);
+}
+.about .eventinfo .text p {
+  text-align: center;
+  font-size: 1.5rem;
 }
 .about .maincard {
   background-color: white;
@@ -213,113 +224,6 @@ header a:hover {
   mix-blend-mode: screen;
 }
 
-/*
-.products .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.products .box-container .box{
-    flex:1 1 30rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    border:.1rem solid rgba(0,0,0,.1);
-    position: relative;    
-}
-
-.products .box-container .box .discount{
-    position: absolute;
-    top:1rem; left:1rem;
-    padding:.7rem 1rem;
-    font-size: 2rem;
-    color:$whitecolor;
-    background:$darkgraycolor;
-    z-index: 1;
-    border-radius: .5rem;
-}
-.products .box-container .box .category{
-    position: absolute;
-    top:1rem; left:4 rem;
-    padding:.7rem 1rem;
-    font-size: 2rem;
-    color:$whitecolor;
-    background-color: $darkgraycolor;
-    z-index: 1;
-    border-radius: .5rem;
-}
-
-.products .box-container .box .image{
-    position: relative;
-    text-align: center;
-    padding-top: 2rem;
-    overflow:hidden;
-}
-
-.products .box-container .box .image img{
-    height:25rem;
-    width: 45rem;
-    object-fit: cover;
-    border-radius: 2px;
-}
-
-.products .box-container .box:hover .image img{
-    transform: scale(1.5);
-}
-
-.products .box-container .box .image .icons{
-    position: absolute;
-    bottom:-7rem; left:0; right:0;
-    display: flex;
-}
-
-.products .box-container .box:hover .image .icons{
-    bottom:0;
-}
-
-.products .box-container .box .image .icons a{
-    height: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    width:50%;
-    background-color: rgba(27, 27, 27, 0.589);
-    color:#fff;
-}
-
-.products .box-container .box .image .icons .cart-btn{
-    border-left: .1rem solid #fff7;
-    border-right: .1rem solid #fff7;
-    width:100%;
-}
-
-.products .box-container .box .image .icons a:hover{
-    background:#333;
-}
-
-.products .box-container .box .content{
-    padding:2rem;
-    text-align: center;
-}
-
-.products .box-container .box .content h3{
-    font-size: 2.5rem;
-    color:#333;
-}
-
-.products .box-container .box .content .price{
-    font-size: 2.5rem;
-    color:var(--pink);
-    font-weight: bolder;
-    padding-top: 1rem;
-}
-
-.products .box-container .box .content .price span{
-    font-size: 1.5rem;
-    color:#999;
-    font-weight: lighter;
-    text-decoration: line-through;
-}
-*/
 .products .product-container {
   flex-wrap: wrap;
   display: flex;
@@ -417,85 +321,43 @@ header a:hover {
   text-decoration: line-through;
 }
 
-/*FOOTER*/
-/*
-.footer .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
+.footer {
+  border-radius: 1rem;
+  padding: 2rem;
 }
-
-.footer .box-container .box{
-    flex:1 1 25rem;
-}
-
-.footer .box-container .box h3{
-    color:#333;
-    font-size: 2.5rem;
-    padding:1rem 0;
-}
-
-.footer .box-container .box a{
-    display: block;
-    color:#666;
-    font-size: 1.5rem;
-    padding:1rem 0;
-}
-
-.footer .box-container .box a:hover{
-    color:var(--pink);
-    text-decoration: underline;
-}
-
-.footer .box-container .box  img{
-    margin-top: 1rem;
-}
-
-.footer .credit{
-    text-align: center;
-    padding:1.5rem;
-    margin-top: 1.5rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color:#333;
-    border-top: .1rem solid rgba(0,0,0,.1);
-    padding-bottom: 8rem; 
-}
-
-.footer .credit span{
-    color:var(--pink);
-}
-*/
-.footer .info-container {
+.footer .box-container {
+  background-color: rgb(235, 235, 235);
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  padding-left: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 0.5rem;
 }
-.footer .info-container .info {
+.footer .box-container .box {
   flex: 1 1 25rem;
   /*--------*/
   /*--------*/
   /*--------*/
   /*--------*/
 }
-.footer .info-container .info h3 {
+.footer .box-container .box h3 {
   color: rgb(44, 44, 44);
   font-size: 2.5rem;
   padding: 1rem 0;
-  text-align: center;
 }
-.footer .info-container .info a {
+.footer .box-container .box a {
   display: block;
-  color: rgb(202, 202, 202);
+  color: rgb(138, 138, 138);
   font-size: 1.5rem;
   padding: 1rem 0;
-  text-align: center;
 }
-.footer .info-container .info a:hover {
+.footer .box-container .box a:hover {
   text-decoration: underline;
   color: rgb(44, 44, 44);
 }
-.footer .info-container .info img {
+.footer .box-container .box img {
   margin-top: 1rem;
 }
 .footer .credit {
